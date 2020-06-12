@@ -1,0 +1,128 @@
+.content
+	width: 100%
+	height: 100vh
+	background-image: linear-gradient(to left, #86377b 10%, #27273c 90%)
+	color: #fff
+	position: relative
+	@media screen and (max-width: 980px)
+		height: 600px
+	&__name
+		width: 40%
+		font-size: 45px
+		position: absolute
+		top: 50%
+		left: 10%
+		@media screen and (max-width: 980px)
+			width: 100%
+			padding: 0 20px
+			top: 30%
+			left: 0
+		@media screen and (max-width: 480px)
+			font-size: 30px
+
+.side,
+.container
+	position: absolute
+	top: 70%
+	left: 65%
+	width: 100px
+	height: 100px
+	z-index: 999
+	@media screen and (max-width: 980px)
+		top: 60%
+		left: 30%
+.container-one
+	position: absolute
+	top: 15%
+	left: 40%
+	width: 100px
+	height: 100px
+	z-index: 999
+	@media screen and (max-width: 980px)
+		top: 10%
+		left: 20%
+	@media screen and (max-width: 480px)
+		display: none
+.container-two
+	z-index: 999
+	position: absolute
+	top: 30%
+	left: 60%
+	width: 100px
+	height: 100px
+	@media screen and (max-width: 480px)
+		display: none
+
+.container
+	transform-style: preserve-3d
+	animation: rotate 5s infinite linear
+.container-one
+	transform-style: preserve-3d
+	animation: rotate 12s infinite linear
+.container-two
+	transform-style: preserve-3d
+	animation: rotate 10s infinite linear
+
+.side
+	position: absolute
+	width: 10em
+	height: 10em
+	border: .15em solid white
+	border-radius: 3em
+	transform-style: preserve-3d
+	@media screen and (max-width: 480px)
+		width: 5em
+		height: 5em
+	.side:before,
+	.side:after
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		margin: auto
+		transform: translateZ(2em) rotateZ(45deg)
+	.side:before
+		width: 5em
+		height: 5em
+		box-shadow: 0 0 10px 5px rgba(255,255,255,.5) inset
+		border: 2px dotted rgba(255,255,255,.5)
+		border-radius: 20px
+		box-sizing: border-box
+		transform: translateZ(3em) rotateZ(45deg)
+		@media screen and (max-width: 480px)
+			width: 2.5em
+			height: 2.5em
+	.side:after
+		width: 10em
+		height: 10em
+		box-shadow: 0 0 20px 10px rgba(255,255,255,.5) inset
+		border: 4px dotted rgba(255,255,255,.5)
+		box-sizing: border-box
+		transform: translateZ(2em) rotateZ(45deg)
+		@media screen and (max-width: 480px)
+			width: 5em
+			height: 5em
+.back
+	transform: translateZ(-5em) rotateY(180deg)
+
+.left
+	transform: translateX(-5em) rotateY(-90deg)
+
+.right
+	transform: translateX(5em) rotateY(90deg)
+
+.top
+	transform: translateY(-5em) rotateX(90deg)
+
+.bottom
+	transform: translateY(5em) rotateX(-90deg)
+
+.front
+	transform: translateZ(5em)
+
+@keyframes rotate
+	100%
+		transform: rotateX(360deg) rotateY(-360deg) rotateZ(360deg)

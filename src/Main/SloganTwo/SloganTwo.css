@@ -1,0 +1,153 @@
+.slogantwo {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: -8px;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(10%, #86377b), color-stop(90%, #27273c));
+  background-image: linear-gradient(to left, #86377b 10%, #27273c 90%);
+}
+
+@media screen and (max-width: 980px) {
+  .slogantwo {
+    min-height: 450px;
+  }
+}
+
+.slogantwo__image-one, .slogantwo__image-two {
+  width: 200px;
+  height: 200px;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 780px) {
+  .slogantwo__image-one, .slogantwo__image-two {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.slogantwo__image-one svg, .slogantwo__image-two svg {
+  width: 100%;
+  height: 100%;
+}
+
+.slogantwo__image-two {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  fill: #27273c;
+  -webkit-animation: move-second-one 15s infinite linear;
+          animation: move-second-one 15s infinite linear;
+}
+
+.slogantwo__image-one {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  fill: #86377b;
+  -webkit-animation: move-second-two 8s infinite linear;
+          animation: move-second-two 8s infinite linear;
+}
+
+.slogantwo__name {
+  font-size: 50px;
+  color: #fff;
+}
+
+.slogantwo__center {
+  width: 60%;
+}
+
+.slogantwo__center svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+#quote4Triangle {
+  fill: none;
+  stroke: #e2b8ab;
+  stroke-width: 15;
+  stroke-miterlimit: 10;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1000;
+}
+
+.textBG {
+  fill: none;
+  background: #0c0c0c;
+}
+
+.text {
+  padding: .5em;
+  font-family: league_gothicregular !important;
+  font-size: 35px;
+  color: #fff;
+  fill: #fff;
+}
+
+@-webkit-keyframes move-second-one {
+  40% {
+    right: 100px;
+    bottom: 75%;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  80% {
+    right: 60%;
+    bottom: -10em;
+  }
+}
+
+@keyframes move-second-one {
+  40% {
+    right: 100px;
+    bottom: 75%;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  80% {
+    right: 60%;
+    bottom: -10em;
+  }
+}
+
+@-webkit-keyframes move-second-two {
+  40% {
+    left: 100px;
+    top: 75%;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  80% {
+    left: 70%;
+    top: -10em;
+  }
+}
+
+@keyframes move-second-two {
+  40% {
+    left: 100px;
+    top: 75%;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  80% {
+    left: 70%;
+    top: -10em;
+  }
+}
+/*# sourceMappingURL=SloganTwo.css.map */

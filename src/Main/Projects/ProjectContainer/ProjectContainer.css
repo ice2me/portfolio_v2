@@ -1,0 +1,131 @@
+.projects__box {
+  width: 70%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: 2px solid #C32285;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px 10px 10px 20px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 780px) {
+  .projects__box {
+    width: 90%;
+  }
+}
+
+.projects__box:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media screen and (max-width: 780px) {
+  .projects__box:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.projects__box-name {
+  width: 100%;
+  font-size: 30px;
+  color: #fff;
+}
+
+.projects__box-name:hover, .projects__box-name:focus {
+  color: #C32285;
+}
+
+@media screen and (max-width: 780px) {
+  .projects__box-name {
+    font-size: 22px;
+  }
+}
+
+.projects__box-title {
+  font-size: 25px;
+  color: #fff;
+  margin: 15px 0;
+  cursor: default;
+}
+
+@media screen and (max-width: 780px) {
+  .projects__box-title {
+    font-size: 20px;
+  }
+}
+
+.projects__box-link {
+  width: 100%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.projects__box-link span {
+  font-size: 30px;
+  color: #C32285;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 780px) {
+  .projects__box-link span {
+    font-size: 22px;
+  }
+}
+
+.projects__box-link::after {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: transparent;
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  content: 'open link =)';
+  text-transform: uppercase;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+@media screen and (max-width: 780px) {
+  .projects__box-link::after {
+    font-size: 22px;
+  }
+}
+
+.projects__box-link:hover, .projects__box-link:focus {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: rotateX(-90deg) translateY(100%);
+          transform: rotateX(-90deg) translateY(100%);
+}
+/*# sourceMappingURL=ProjectContainer.css.map */

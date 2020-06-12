@@ -1,0 +1,65 @@
+.projects__box
+	width: 70%
+	height: max-content
+	border: 2px solid #C32285
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: flex-start
+	padding: 10px 10px 10px 20px
+	margin: 10px 0
+	border-radius: 3px
+	@media screen and (max-width: 780px)
+		width: 90%
+	&:hover
+		transform: scale(1.2)
+		@media screen and (max-width: 780px)
+			transform: none
+	&-name
+		width: 100%
+		font-size: 30px
+		color: #fff
+		&:hover, &:focus
+			color: #C32285
+		@media screen and (max-width: 780px)
+			font-size: 22px
+	&-title
+		font-size: 25px
+		color: #fff
+		margin: 15px 0
+		cursor: default
+		@media screen and (max-width: 780px)
+			font-size: 20px
+	&-link
+		width: 100%
+		background-color: transparent
+		display: flex
+		align-items: flex-start
+		transform-style: preserve-3d
+		span
+			font-size: 30px
+			color: #C32285
+			text-transform: uppercase
+			@media screen and (max-width: 780px)
+				font-size: 22px
+		&::after
+			top: -100%
+			left: 0
+			width: 100%
+			height: 100%
+			display: flex
+			align-items: flex-start
+			background-color: transparent
+			position: absolute
+			color: #fff
+			font-size: 30px
+			content: 'open link =)'
+			text-transform: uppercase
+			transform-origin: left bottom
+			transform: rotateX(90deg)
+			@media screen and (max-width: 780px)
+				font-size: 22px
+		&:hover, &:focus
+			transform-origin: center bottom
+			transform: rotateX(-90deg) translateY(100%)
+		

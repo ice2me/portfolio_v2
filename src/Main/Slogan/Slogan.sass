@@ -1,0 +1,87 @@
+.slogan
+	width: 100%
+	min-height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	position: relative
+	top: -1px
+	background-image: linear-gradient(to left, #86377b 10%, #27273c 90%)
+	@media screen and (max-width: 980px)
+		min-height: 450px
+	&__image-one, &__image-two
+		width: 200px
+		height: 200px
+		z-index: 9999
+		@media screen and (max-width: 780px)
+			width: 120px
+			height: 120px
+		// @media screen and (max-width: 480px)
+		// 	display: none
+		svg
+			width: 100%
+			height: 100%
+	&__image-one
+		position: absolute
+		top: 100px
+		right: 100px
+		fill: #27273c
+		animation: move-one 15s infinite linear
+	&__image-two
+		position: absolute
+		bottom: 100px
+		left: 100px
+		fill: #86377b
+		animation: move-two 8s infinite linear
+	&__name
+		font-size: 50px
+		color: #fff
+	&__center
+		width: 35%
+		margin-left: -40px
+		@media screen and (max-width: 980px)
+			width: 40%
+		@media screen and (max-width: 480px)
+			width: 55%
+
+.quote1Heart
+	fill: none
+	stroke: #c32285
+	stroke-width: 10
+	stroke-dashoffset: 226px
+.quoteTextBG
+	fill: #0c0c0c
+.quoteTextBG
+	fill: transparent
+
+.quoteTextBG, html
+	background: #0c0c0c
+.quoteText
+	padding: .5em
+	font-family: league_gothicregular !important
+	font-size: 55px
+	color: #fff
+	fill: #fff
+#quote1TextSVG
+	overflow: visible
+
+
+
+@keyframes move-one
+	40%
+		right: 100px
+		top: 75%
+		animation-timing-function: ease-in
+		
+	80%
+		right: 60%
+		top: 50px
+@keyframes move-two
+	40%
+		left: 100px
+		bottom: 60%
+		animation-timing-function: ease-in
+	80%
+		left: 70%
+		bottom: 50px

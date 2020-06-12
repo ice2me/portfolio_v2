@@ -1,0 +1,231 @@
+.footer {
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(10%, #86377b), color-stop(90%, #27273c));
+  background-image: linear-gradient(to left, #86377b 10%, #27273c 90%);
+  color: #fff;
+  position: relative;
+  top: -9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer p {
+  width: 80%;
+  font-size: 30px;
+  color: #2577B8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.footer__content {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__content span {
+  font-size: 22px;
+  margin: 20px 0;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: left;
+  color: #2577B8;
+}
+
+@media screen and (max-width: 780px) {
+  .footer__content span {
+    line-height: 1.2;
+    font-size: 18px;
+  }
+}
+
+.footer__links {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 580px) {
+  .footer__links {
+    width: 100%;
+    height: 40px;
+    min-width: 100%;
+  }
+  .footer__links a {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 580px) and (max-width: 360px) {
+  .footer__links a {
+    margin: 5px;
+  }
+}
+
+.footer__link {
+  width: 50px;
+  height: 40px;
+}
+
+.footer__link-image1 {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__link-image1:hover, .footer__link-image1:focus {
+  -webkit-transform: rotate(-360deg) scale(1.5);
+          transform: rotate(-360deg) scale(1.5);
+}
+
+.footer__link-image1 svg {
+  width: 100%;
+  height: 100%;
+  fill: #E9B171;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linejoin: round;
+  stroke-miterlimit: 1.41421;
+}
+
+.footer__link-image1 svg:hover, .footer__link-image1 svg:focus {
+  fill: #fff;
+}
+
+.footer__link-image2 {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__link-image2:hover, .footer__link-image2:focus {
+  -webkit-transform: rotate(-360deg) scale(1.5);
+          transform: rotate(-360deg) scale(1.5);
+}
+
+.footer__link-image2 svg {
+  width: 100%;
+  height: 100%;
+  fill: #E9B171;
+}
+
+.footer__link-image2 svg:hover, .footer__link-image2 svg:focus {
+  fill: #fff;
+}
+
+.footer__link-image3 {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__link-image3:hover, .footer__link-image3:focus {
+  -webkit-transform: rotate(-360deg) scale(1.5);
+          transform: rotate(-360deg) scale(1.5);
+}
+
+.footer__link-image3 svg {
+  width: 100%;
+  height: 100%;
+  fill: #E9B171;
+}
+
+.footer__link-image3 svg:hover, .footer__link-image3 svg:focus {
+  fill: #fff;
+}
+
+.footer__link-image4 {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__link-image4:hover, .footer__link-image4:focus {
+  -webkit-transform: rotate(-360deg) scale(1.5);
+          transform: rotate(-360deg) scale(1.5);
+}
+
+.footer__link-image4 svg {
+  width: 100%;
+  height: 100%;
+  fill: #E9B171;
+}
+
+.footer__link-image4 svg:hover, .footer__link-image4 svg:focus {
+  fill: #fff;
+}
+
+.footer__link-image5 {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__link-image5:hover, .footer__link-image5:focus {
+  -webkit-transform: rotate(-360deg) scale(1.5);
+          transform: rotate(-360deg) scale(1.5);
+}
+
+.footer__link-image5 svg {
+  width: 100%;
+  height: 100%;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #E9B171;
+}
+
+.footer__link-image5 svg:hover, .footer__link-image5 svg:focus {
+  fill: #fff;
+}
+
+.footer__link-image6 {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__link-image6:hover, .footer__link-image6:focus {
+  -webkit-transform: rotate(-360deg) scale(1.5);
+          transform: rotate(-360deg) scale(1.5);
+}
+
+.footer__link-image6 svg {
+  width: 100%;
+  height: 100%;
+  fill: #E9B171;
+}
+
+.footer__link-image6 svg:hover, .footer__link-image6 svg:focus {
+  fill: #fff;
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,222 @@
+@keyframes rot
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+@-webkit-keyframes rot
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+	
+	
+	
+	
+	
+	
+.about
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	background-image: linear-gradient(to left, #86377b 10%, #27273c 90%)
+	position: relative
+	top: -5px
+	p
+		width: 80%
+		font-size: 30px
+		color: #25776B
+		display: flex
+		align-items: center
+		position: relative
+		margin-bottom: 30px
+	&__conteiner
+		display: flex
+		flex-direction: row
+		position: relative
+		width: 70%
+		align-items: center
+		justify-content: space-between
+		@media screen and (max-width: 1400px)
+			flex-direction: column
+			justify-content: center
+		&-text
+			width: 50%
+			line-height: 1.5
+			margin-top: 20px
+			text-align: left
+			@media screen and (max-width: 1400px)
+				width: 100%
+			p
+				color: #25776B
+				font-size: 22px
+				margin: 20px 0
+				@media screen and (max-width: 980px)
+					font-size: 18px
+					width: 100%
+			span
+				color: #E9B171
+				font-size: 22px
+				margin-top: 20px
+				@media screen and (max-width: 980px)
+					font-size: 18px
+		&-social
+			position: relative
+			min-width: 550px
+			height: 550px
+			display: flex
+			align-items: center
+			justify-content: center
+			@media screen and (max-width: 580px)
+				width: 100%
+				height: 80px
+				min-width: 100%
+				a
+					margin: 0 10px
+					@media screen and (max-width: 360px)
+						margin: 5px
+		&-image1
+			position: absolute
+			top: 105px
+			left: 307px
+			width: 24px
+			height: 24px
+			&:hover, &:focus
+				transform: rotate(-360deg) scale(1.5)
+			svg
+				width: 100%
+				height: 100%
+				fill: #E9B171
+				fill-rule: evenodd
+				clip-rule: evenodd
+				stroke-linejoin: round
+				stroke-miterlimit: 1.41421
+				&:hover, &:focus
+					fill: #fff
+			@media screen and (max-width: 580px)
+				position: relative
+				top: 0
+				left: 0
+		&-image2
+			position: absolute
+			top: 140px
+			left: 155px
+			width: 24px
+			height: 24px
+			&:hover, &:focus
+				transform: rotate(-360deg) scale(1.5)
+			svg
+				width: 100%
+				height: 100%
+				fill: #E9B171
+				&:hover, &:focus
+					fill: #fff
+			@media screen and (max-width: 580px)
+				position: relative
+				top: 0
+				left: 0
+		&-image3
+			position: absolute
+			width: 24px
+			height: 24px
+			top: 300px
+			left: 110px
+			&:hover, &:focus
+				transform: rotate(-360deg) scale(1.5)
+			svg
+				width: 100%
+				height: 100%
+				fill: #E9B171
+				&:hover, &:focus
+					fill: #fff
+			@media screen and (max-width: 580px)
+				position: relative
+				top: 0
+				left: 0
+		&-image4
+			position: absolute
+			bottom: 110px
+			left: 222px
+			width: 24px
+			height: 24px
+			&:hover, &:focus
+				transform: rotate(-360deg) scale(1.5)
+			svg
+				width: 100%
+				height: 100%
+				fill: #E9B171
+				&:hover, &:focus
+					fill: #fff
+			@media screen and (max-width: 580px)
+				position: relative
+				top: 0
+				left: 0
+		&-image5
+			position: absolute
+			bottom: 145px
+			right: 152px
+			width: 24px
+			height: 24px
+			&:hover, &:focus
+				transform: rotate(-360deg) scale(1.5)
+			svg
+				width: 100%
+				height: 100%
+				fill-rule: evenodd
+				clip-rule: evenodd
+				fill: #E9B171
+				&:hover, &:focus
+					fill: #fff
+			@media screen and (max-width: 580px)
+				position: relative
+				top: 0
+				left: 0
+		&-image6
+			position: absolute
+			top: 220px
+			right: 105px
+			width: 24px
+			height: 24px
+			&:hover, &:focus
+				transform: rotate(-360deg) scale(1.5)
+			svg
+				width: 100%
+				height: 100%
+				fill: #E9B171
+				&:hover, &:focus
+					fill: #fff
+			@media screen and (max-width: 580px)
+				position: relative
+				top: 0
+				left: 0
+		&-figura
+			position: absolute
+			fill: #25776B
+			width: 260px
+			height: 260px
+			animation: 10s linear 1s normal none infinite running rot
+			@media screen and (max-width: 580px)
+				display: none
+			svg
+				width: 100%
+				height: 100%
+		&-link
+			width: 70%
+			height: 50px
+			background-color: transparent
+			border: 1px solid #25776B
+			font-size: 20px
+			font-weight: bold
+			color: #fff
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 40px
+			&:hover, &:focus
+				background-color: #86377b
+				border: 1px solid #E9B171
+			@media screen and (max-width: 780px)
+				font-size: 16px
+				padding: 0 10px
+
