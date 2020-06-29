@@ -16,7 +16,10 @@ class Projects extends Component {
 				'seven' : 'Wooden',
 				'eight' : 'Squro',
 				'nine' : 'LifeCell',
-				'ten' : 'Business'
+				'ten' : 'Business',
+				'eleven' : 'Taxi',
+				'twelve' : 'Foxtrot',
+				'thirteen' : 'FatBike',
 			},
 			title: {
 				'one' : 'My site design for the provision of front end development services',
@@ -28,19 +31,25 @@ class Projects extends Component {
 				'seven' : 'Progressively Enhanced website experiance, both on Desktop and Mobile for an Wooden brand',
 				'eight' : 'Landing Page brand scuro selling scooters',
 				'nine' : 'mobile operator banner for green office from Ukraine',
-				'ten' : 'A responsive, feature-rich portfolio website for a technology consulting company.'
+				'ten' : 'A responsive, feature-rich portfolio website for a technology consulting company.',
+				'eleven' : 'A responsive, feature-rich website for a technology taxi company.',
+				'twelve' : 'shop banner for Foxtrot from Ukraine',
+				'thirteen' : 'An Interactive panoramic HTML5 Catalogue online store main',
 			},
 			link: {
-				'one' : 'http://u81272.test-handyhost.ru/',
-				'two' : 'http://u81272.test-handyhost.ru/portfolio/AvenueFashion/index.html',
-				'three' : 'http://u81272.test-handyhost.ru/portfolio/AvenueFashion/LocalStores.html',
-				'four' : 'http://u81272.test-handyhost.ru/portfolio/AvenueFashion/LookBook.html',
-				'five' : 'http://u81272.test-handyhost.ru/portfolio/AvenueFashion/Brands.html',
-				'six' : 'http://u81272.test-handyhost.ru/portfolio/Magazine/index.html',
-				'seven' : 'http://u81272.test-handyhost.ru/portfolio/Wooden/index.html',
-				'eight' : 'http://u81272.test-handyhost.ru/portfolio/Squro/index.html',
-				'nine' : 'http://u81272.test-handyhost.ru/portfolio/LifeCell/index.html',
-				'ten' : 'http://u81272.test-handyhost.ru/portfolio/WerstkaWebsiteLanding/index.html'
+				'one' : 'http://goldenlion.serhii-zuiev.com.ua/en/index__en.html',
+				'two' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/AvenueFashion/index.html',
+				'three' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/AvenueFashion/LocalStores.html',
+				'four' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/AvenueFashion/LookBook.html',
+				'five' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/AvenueFashion/Brands.html',
+				'six' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/Magazine/index.html',
+				'seven' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/Wooden/index.html',
+				'eight' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/Squro/index.html',
+				'nine' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/LifeCell/index.html',
+				'ten' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/WerstkaWebsiteLanding/index.html',
+				'eleven' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/TAXI/indexKiev.html',
+				'twelve' :'http://goldenlion.serhii-zuiev.com.ua/portfolio/Foxtrot/index.html',
+				'thirteen' : 'http://goldenlion.serhii-zuiev.com.ua/portfolio/FatBike/index.html',
 			}
 		}
 	}
@@ -97,6 +106,21 @@ class Projects extends Component {
 					name={this.state.name.ten}
 					title={this.state.title.ten}
 					link={this.state.link.ten}
+				/>
+				<ProjectContainer
+					name={this.state.name.eleven}
+					title={this.state.title.eleven}
+					link={this.state.link.eleven}
+				/>
+				<ProjectContainer
+					name={this.state.name.twelve}
+					title={this.state.title.twelve}
+					link={this.state.link.twelve}
+				/>
+				<ProjectContainer
+					name={this.state.name.thirteen}
+					title={this.state.title.thirteen}
+					link={this.state.link.thirteen}
 				/>
 				<p>{'<projects>'}</p>
 			</div>
